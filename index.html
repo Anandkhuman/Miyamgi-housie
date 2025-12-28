@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MIYAMGI HOUSIE</title>
+    <title>Miyamgi Housie</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -1583,7 +1583,7 @@
     <header class="top-header">
         <div class="title-container">
             <div class="logo-container"><i class="fas fa-ticket-alt"></i></div>
-            <h1 class="webTitle">MIYAMGI HOUSIE</h1>
+            <h1 class="webTitle">Miyamgi Housie</h1>
         </div>
     </header>
 
@@ -1646,7 +1646,7 @@
     <header class="top-header">
          <div class="title-container">
             <div class="logo-container"><i class="fas fa-ticket-alt"></i></div>
-            <h1 class="webTitle">MIYAMGI HOUSIE</h1>
+            <h1 class="webTitle">Miyamgi Housie</h1>
         </div>
     </header>
 
@@ -1710,7 +1710,8 @@
             <button class="actionBtn" onclick="downloadPreviousGameTicketList()">PREV. GAME TICKETS</button>
             <button class="actionBtn" onclick="downloadCurrentSoldTickets()">DOWNLOAD CURRENT TKT</button>
             <button class="actionBtn" onclick="downloadWinnersPDF()">DOWNLOAD WINNERS PDF</button>
-                </div>
+
+           </div>
     </div>
     <div class="gameSettingDiv">
         <button class="titleBtn">START GAME CALLING</button>
@@ -2176,22 +2177,7 @@
     </div>
 </div>
 
-<!-- NEW: Manual Call Log Popup -->
-<div class="overlay-popup" id="manualCallLogPopup">
-    <div class="popup-content">
-        <button class="x-button" onclick="closePopups()"><i class="fas fa-times"></i></button>
-        <h3 class="popup-title">Manual Call Log</h3>
-        <div id="manualCallLogContent" style="padding: 1rem;">
-            <div id="currentManualCallDisplay" style="text-align: center; margin-bottom: 1.5rem; padding: 1rem; border: 2px dashed var(--accent-primary); border-radius: 8px;">
-                <!-- Current manual number will be displayed here -->
-            </div>
-            <h4>Log History:</h4>
-            <ul id="manualCallLogList" style="list-style: none; padding: 0; max-height: 50vh; overflow-y: auto;">
-                <!-- Log items will be populated here -->
-            </ul>
-        </div>
-    </div>
-</div>
+
 
 
 <!-- Global Audio Players -->
@@ -4197,7 +4183,7 @@ function handlePosterBgUpload(event) {
 }
 
 function showPosterModal() {
-    const title = "MIYAMGI HOUSIE";
+    const title = "Miyamgi Housie";
     const gameDateTime = gameSettingsData.gameDateTime;
     const ticketPrice = gameSettingsData.ticketPrice || 'N/A';
     const totalTickets = gameSettingsData.totalTickets || 'N/A';
@@ -4288,7 +4274,7 @@ async function sharePoster() {
         const file = new File([blob], 'housie-poster.png', { type: 'image/png' });
         const filesArray = [file];
 
-        const websiteName = "MIYAMGI HOUSIE Game!";
+        const websiteName = "Miyamgi Housie Game!";
         const websiteLink = window.location.href.split('#')[0];
         
         if (navigator.canShare && navigator.canShare({ files: filesArray })) {
